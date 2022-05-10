@@ -1,0 +1,12 @@
+
+<div *ngIf="!datos; else siDatos">
+  <p>Todavia no has rellenado tus datos personales</p>
+</div>
+
+<ng-template #siDatos>
+  {{datos.localidad}} <br>
+  {{datos.direccion}} <br>
+  {{datos.cp}} <br>
+  {{datos.email}} <br>
+  {{datos.nombre}} <br>
+</ng-template>
